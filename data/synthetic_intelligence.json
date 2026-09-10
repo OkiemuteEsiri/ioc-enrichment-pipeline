@@ -1,0 +1,12 @@
+{
+  "indicators": [
+    {"value":"203.0.113.77","kind":"ipv4","source":"synthetic-edr","confidence":82},
+    {"value":"login-example.test","kind":"domain","source":"synthetic-email","confidence":72},
+    {"value":"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa","kind":"sha256","source":"synthetic-sandbox","confidence":90}
+  ],
+  "intelligence": {
+    "ipv4:203.0.113.77":{"intel_matches":4,"malicious_votes":3,"first_seen_days":45,"prevalence":1,"attack_techniques":["T1071.001"]},
+    "domain:login-example.test":{"intel_matches":2,"malicious_votes":2,"first_seen_days":8,"prevalence":2,"attack_techniques":["T1566.002"]},
+    "sha256:aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa":{"intel_matches":5,"malicious_votes":5,"first_seen_days":60,"prevalence":1,"attack_techniques":["T1204.002"]}
+  }
+}
